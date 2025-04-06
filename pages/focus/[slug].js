@@ -38,9 +38,10 @@ const focusPages = {
         author: "Mariana from São Paulo",
       },
     },
-    // Other language versions would include the same flag structure
     es: {
-      // Spanish version content...
+      title: "Español para hablantes de portugués brasileño",
+      description:
+        "Aprende español naturalmente con Chat With Lex, diseñado específicamente para hablantes nativos de portugués brasileño.",
       flags: {
         target: {
           code: "es",
@@ -51,9 +52,25 @@ const focusPages = {
           name: "Brazilian",
         },
       },
+      benefits: [
+        "Enfocado en los desafíos comunes para los hablantes de portugués que aprenden español",
+        "Atención especial a los 'falsos amigos' entre portugués y español",
+        "Contexto cultural relevante para Brasil y América Latina hispanohablante",
+      ],
+      commonMistakes: [
+        "Usar 'embarazada' cuando quieres decir 'avergonzado' (en realidad significa 'grávida')",
+        "Decir 'exito' cuando quieres decir 'salida' (en realidad significa 'sucesso')",
+        "Usar la estructura de oraciones portuguesa en frases españolas",
+      ],
+      testimonial: {
+        text: "Como brasileña, encontré que aprender español a través de Chat With Lex es mucho más fácil que los métodos tradicionales. El bot comprende los desafíos específicos que enfrento y me ayuda a evitar errores comunes.",
+        author: "Mariana de São Paulo",
+      },
     },
     pt: {
-      // Portuguese version content...
+      title: "Espanhol para falantes de português brasileiro",
+      description:
+        "Aprenda espanhol naturalmente com o Chat With Lex, projetado especificamente para falantes nativos de português brasileiro.",
       flags: {
         target: {
           code: "es",
@@ -63,6 +80,20 @@ const focusPages = {
           code: "br",
           name: "Brazilian",
         },
+      },
+      benefits: [
+        "Focado nos desafios comuns para falantes de português que aprendem espanhol",
+        "Atenção especial aos 'falsos amigos' entre português e espanhol",
+        "Contexto cultural relevante para o Brasil e América Latina hispânica",
+      ],
+      commonMistakes: [
+        "Usar 'embarazada' quando você quer dizer 'envergonhado' (na verdade significa 'grávida')",
+        "Dizer 'exito' quando você quer dizer 'saída' (na verdade significa 'sucesso')",
+        "Usar a estrutura de frases portuguesa em frases espanholas",
+      ],
+      testimonial: {
+        text: "Como brasileira, achei aprender espanhol através do Chat With Lex muito mais fácil que os métodos tradicionais. O bot entende os desafios específicos que enfrento e me ajuda a evitar erros comuns.",
+        author: "Mariana de São Paulo",
       },
     },
   },
@@ -96,8 +127,10 @@ const focusPages = {
         author: "Rafael from Rio de Janeiro",
       },
     },
-    // Other language versions with flags
     es: {
+      title: "Inglés para hablantes de portugués brasileño",
+      description:
+        "Aprende inglés de manera natural con Chat With Lex, diseñado específicamente para hablantes nativos de portugués brasileño.",
       flags: {
         target: {
           code: "gb",
@@ -108,8 +141,25 @@ const focusPages = {
           name: "Brazilian",
         },
       },
+      benefits: [
+        "Enfoque en los desafíos de pronunciación específicos para hablantes de portugués",
+        "Atención especial a los tiempos verbales en inglés que no existen en portugués",
+        "Práctica con expresiones y modismos comunes en inglés",
+      ],
+      commonMistakes: [
+        "Confundir 'actually' con 'currently' (falso cognado con 'atualmente')",
+        "Usar el presente continuo cuando se necesita el presente simple",
+        "Dificultad con los sonidos 'th' en inglés",
+      ],
+      testimonial: {
+        text: "Chat With Lex me ayudó a superar mi miedo a hablar inglés. Las correcciones personalizadas y la práctica constante a través de WhatsApp hicieron que aprender fuera conveniente y efectivo.",
+        author: "Rafael de Río de Janeiro",
+      },
     },
     pt: {
+      title: "Inglês para falantes de português brasileiro",
+      description:
+        "Aprenda inglês naturalmente com o Chat With Lex, projetado especificamente para falantes nativos de português brasileiro.",
       flags: {
         target: {
           code: "gb",
@@ -119,6 +169,20 @@ const focusPages = {
           code: "br",
           name: "Brazilian",
         },
+      },
+      benefits: [
+        "Foco nos desafios de pronúncia específicos para falantes de português",
+        "Atenção especial aos tempos verbais em inglês que não existem em português",
+        "Prática com expressões e idiomatismos comuns em inglês",
+      ],
+      commonMistakes: [
+        "Confundir 'actually' com 'currently' (falso cognato com 'atualmente')",
+        "Usar o presente contínuo quando o presente simples é necessário",
+        "Dificuldade com os sons 'th' em inglês",
+      ],
+      testimonial: {
+        text: "O Chat With Lex me ajudou a superar meu medo de falar inglês. As correções personalizadas e a prática constante pelo WhatsApp tornaram o aprendizado conveniente e eficaz.",
+        author: "Rafael do Rio de Janeiro",
       },
     },
   },
@@ -152,8 +216,10 @@ const focusPages = {
         author: "Michael from New York",
       },
     },
-    // Other language versions with flags
     es: {
+      title: "Español para hablantes de inglés",
+      description:
+        "Aprende español de manera natural con Chat With Lex, diseñado específicamente para hablantes nativos de inglés.",
       flags: {
         target: {
           code: "es",
@@ -164,8 +230,25 @@ const focusPages = {
           name: "UK",
         },
       },
+      benefits: [
+        "Enfoque en las conjugaciones y tiempos verbales en español",
+        "Atención especial al acuerdo de género en español",
+        "Contexto cultural relevante para países de habla hispana",
+      ],
+      commonMistakes: [
+        "Usar 'embarazada' cuando quieres decir 'embarrassed' (en realidad significa 'pregnant')",
+        "Olvidar usar diferentes formas de 'tú' (tú, usted, vosotros, ustedes)",
+        "Dificultad con el sonido 'r' en español",
+      ],
+      testimonial: {
+        text: "Chat With Lex hizo que aprender español fuera mucho más práctico que aprender en el aula. Me encanta poder practicar durante todo el día, y las correcciones me ayudan a evitar cometer los mismos errores repetidamente.",
+        author: "Michael de Nueva York",
+      },
     },
     pt: {
+      title: "Espanhol para falantes de inglês",
+      description:
+        "Aprenda espanhol naturalmente com o Chat With Lex, projetado especificamente para falantes nativos de inglês.",
       flags: {
         target: {
           code: "es",
@@ -175,6 +258,20 @@ const focusPages = {
           code: "gb",
           name: "UK",
         },
+      },
+      benefits: [
+        "Foco nas conjugações e tempos verbais em espanhol",
+        "Atenção especial ao acordo de gênero em espanhol",
+        "Contexto cultural relevante para países de língua espanhola",
+      ],
+      commonMistakes: [
+        "Usar 'embarazada' quando quer dizer 'embarrassed' (na verdade significa 'pregnant')",
+        "Esquecer de usar diferentes formas de 'você' (tú, usted, vosotros, ustedes)",
+        "Dificuldade com o som 'r' em espanhol",
+      ],
+      testimonial: {
+        text: "O Chat With Lex tornou o aprendizado de espanhol muito mais prático do que o aprendizado em sala de aula. Adoro poder praticar ao longo do dia, e as correções me ajudam a evitar cometer os mesmos erros repetidamente.",
+        author: "Michael de Nova York",
       },
     },
   },
@@ -208,8 +305,10 @@ const focusPages = {
         author: "Carlos from Mexico City",
       },
     },
-    // Other language versions with flags
     es: {
+      title: "Inglés para hispanohablantes",
+      description:
+        "Aprende inglés de forma natural con Chat With Lex, diseñado específicamente para hablantes nativos de español.",
       flags: {
         target: {
           code: "gb",
@@ -220,8 +319,25 @@ const focusPages = {
           name: "Spanish",
         },
       },
+      benefits: [
+        "Enfoque en los desafíos de pronunciación en inglés para hispanohablantes",
+        "Atención especial a los tiempos verbales en inglés y su uso",
+        "Práctica con expresiones y modismos comunes en inglés",
+      ],
+      commonMistakes: [
+        "Agregar 'e' antes de palabras que comienzan con 's' (decir 'especial' en lugar de 'special')",
+        "Confundir 'actual' con 'current' (falso cognado con 'actual')",
+        "Dificultad con los sonidos vocálicos en inglés",
+      ],
+      testimonial: {
+        text: "Chat With Lex entiende los desafíos específicos que enfrento como hispanohablante. La práctica diaria a través de WhatsApp ha mejorado drásticamente mi fluidez en inglés.",
+        author: "Carlos de Ciudad de México",
+      },
     },
     pt: {
+      title: "Inglês para falantes de espanhol",
+      description:
+        "Aprenda inglês naturalmente com o Chat With Lex, projetado especificamente para falantes nativos de espanhol.",
       flags: {
         target: {
           code: "gb",
@@ -231,6 +347,20 @@ const focusPages = {
           code: "es",
           name: "Spanish",
         },
+      },
+      benefits: [
+        "Foco nos desafios de pronúncia em inglês para falantes de espanhol",
+        "Atenção especial aos tempos verbais em inglês e seu uso",
+        "Prática com expressões e idiomatismos comuns em inglês",
+      ],
+      commonMistakes: [
+        "Adicionar 'e' antes de palavras que começam com 's' (dizer 'especial' em vez de 'special')",
+        "Confundir 'actual' com 'current' (falso cognato com 'actual')",
+        "Dificuldade com os sons das vogais em inglês",
+      ],
+      testimonial: {
+        text: "O Chat With Lex entende os desafios específicos que enfrento como falante de espanhol. A prática diária através do WhatsApp melhorou drasticamente minha fluência em inglês.",
+        author: "Carlos da Cidade do México",
       },
     },
   },

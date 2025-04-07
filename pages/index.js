@@ -29,7 +29,7 @@ export default function Home() {
         <title>{t.meta.title}</title>
         <meta name="description" content={t.meta.description} />
         <meta name="keywords" content={t.meta.keywords} />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="./favicon.svg" style={{ width: "40px" }} />
       </Head>
 
       <Header />

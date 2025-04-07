@@ -2,40 +2,74 @@
 import { useRouter } from "next/router";
 import Link from "next/link";
 import translations from "../translations";
+import Image from "next/image";
+import logoSrc from "../public/logo.svg"; // Adjusted the path to be absolute
 
 export default function Header() {
   const router = useRouter();
   const { locale } = router;
   const t = translations[locale || "en"];
 
+  const handleNavigation = (hash) => {
+    router.replace(`/${hash}`);
+  };
+
   return (
     <header className="sticky top-0 bg-white shadow-sm z-10">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         <div className="flex items-center">
-          <Link href="/" className="text-2xl font-bold">
-            Chat With Lex
+          <Link href="/">
+            <Image src={logoSrc} alt="Chat With Lex Logo" height={60} />
           </Link>
         </div>
 
         <nav className="hidden md:block">
           <ul className="flex space-x-6">
             <li>
-              <a href="#features" className="hover:text-[#FF9B42]">
+              <a
+                href="#features"
+                className="hover:text-[#FF9B42]"
+                onClick={(e) => {
+                  e.preventDefault();
+                  handleNavigation("#features");
+                }}
+              >
                 {t.nav.features}
               </a>
             </li>
             <li>
-              <a href="#how-it-works" className="hover:text-[#FF9B42]">
+              <a
+                href="#how-it-works"
+                className="hover:text-[#FF9B42]"
+                onClick={(e) => {
+                  e.preventDefault();
+                  handleNavigation("#how-it-works");
+                }}
+              >
                 {t.nav.howItWorks}
               </a>
             </li>
             <li>
-              <a href="#pricing" className="hover:text-[#FF9B42]">
+              <a
+                href="#pricing"
+                className="hover:text-[#FF9B42]"
+                onClick={(e) => {
+                  e.preventDefault();
+                  handleNavigation("#pricing");
+                }}
+              >
                 {t.nav.pricing}
               </a>
             </li>
             <li>
-              <a href="#faq" className="hover:text-[#FF9B42]">
+              <a
+                href="#faq"
+                className="hover:text-[#FF9B42]"
+                onClick={(e) => {
+                  e.preventDefault();
+                  handleNavigation("#faq");
+                }}
+              >
                 {t.nav.faq}
               </a>
             </li>

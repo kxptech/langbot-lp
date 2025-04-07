@@ -1,0 +1,11 @@
+<svg width="500" height="120" viewBox="0 0 500 120" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .text {
+      font-family: 'Inter', 'Segoe UI', 'Helvetica Neue', sans-serif;
+      font-weight: 600;
+      font-size: 42px;
+      fill: #FF9B42;
+    }
+  </style>
+  <text x="30" y="75" class="text">Chat With Lex</text>
+</svg>

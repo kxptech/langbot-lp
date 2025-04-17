@@ -15,12 +15,26 @@ export default function Home() {
 
   const [email, setEmail] = useState("");
   const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState("");
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    // Here you would add your email to a database
-    // For now, we'll just simulate a successful submission
-    setSubmitted(true);
+    setError("");
+    try {
+      const res = await fetch("/api/waitlist", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email }),
+      });
+      const result = await res.json();
+      if (res.ok) {
+        setSubmitted(true);
+      } else {
+        setError(result.error || "Something went wrong. Please try again.");
+      }
+    } catch (err) {
+      setError("Network error. Please try again.");
+    }
   };
 
   return (
@@ -458,6 +472,7 @@ export default function Home() {
                       {t.waitlist.button}
                     </button>
                   </div>
+                  {error && <p className="text-red-600 mt-2">{error}</p>}
                   <p className="text-sm text-gray-600 mt-4">
                     {t.waitlist.disclaimer}
                   </p>
